@@ -57,6 +57,9 @@ export default class extends Controller {
           position: newPosition,
         },
       });
+
+      console.log("URL",url)
+      console.log("DATA",data)
       fetch(url, {
         method: "PATCH",
         credentials: "same-origin",
