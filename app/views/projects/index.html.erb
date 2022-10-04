@@ -1,0 +1,18 @@
+<p style="color: green"><%= notice %></p>
+<div class= "container">
+<h1 style="text-align:center">PhotoGallery</h1>
+<br><hr><br>
+
+  <div id="projects">
+
+  <% @projects.each do |project| %>
+    <%= render "projects/draggable",project:project %>
+
+    <p>
+      <%# <%= link_to "Show this project", project %> 
+    </p>
+  <% end %>
+</div>
+</div>
+
+<%= link_to "New project", new_project_path %>

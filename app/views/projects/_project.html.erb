@@ -1,0 +1,32 @@
+<div id="<%= dom_id project %>">
+<% project.images.each do |x|%>
+<%= image_tag x, class:"img-thumbnail selector", width: "200px" %>
+<%end %>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+.selector {
+    user-drag: none;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+</style>
